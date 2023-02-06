@@ -1,12 +1,27 @@
-import { Steps } from './components/Steps';
-import './App.css';
+import { Steps } from "./components/Steps";
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-        <Steps />
-    </div>
-  );
+    const [runs, setRuns] = useState([]);
+    const [date, setDate] = useState();
+    const [distance, setDistance] = useState();
+    const [mergedRuns, setMergedRuns] = useState([]);
+
+    return (
+        <div className="App">
+            <Steps
+                runs={runs}
+                date={date}
+                distance={distance}
+                setRuns={setRuns}
+                setDate={setDate}
+                setDistance={setDistance}
+                mergedRuns={mergedRuns}
+                setMergedRuns={setMergedRuns}
+            />
+        </div>
+    );
 }
 
 export default App;
