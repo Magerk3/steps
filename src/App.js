@@ -17,8 +17,7 @@ function App() {
                 setRuns={setRuns}
                 setDate={setDate}
                 setDistance={setDistance}
-                mergedRuns={mergedRuns}
-                setMergedRuns={setMergedRuns}
+                
             />
         </div>
     );

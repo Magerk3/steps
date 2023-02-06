@@ -1,5 +1,5 @@
-import { e } from "mathjs";
-import { useState } from "react";
+
+
 import { v4 as uuidv4 } from "uuid";
 import { StepsForm } from "./StepsForm";
 import { StepsList } from "./StepsList";
@@ -11,8 +11,7 @@ export const Steps = ({
     setRuns,
     setDistance,
     setDate,
-    setMergedRuns,
-    mergedRuns,
+    
 }) => {
     function handleChange(e) {
         switch (e.target.name) {
